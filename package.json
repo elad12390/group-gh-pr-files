@@ -1,0 +1,19 @@
+{
+  "name": "pr-file-grouper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Firefox extension to filter, group, star and focus files in GitHub pull requests.",
+  "scripts": {
+    "lint": "web-ext lint --source-dir .",
+    "build": "web-ext build --source-dir . --overwrite-dest --ignore-files \"package.json\" \"bun.lock\" \"bun.lockb\" \"node_modules/**\" \".bdd/**\" \".idd/**\" \"tmp/**\" \"web-ext-artifacts/**\" \"README.md\" \".gitignore\"",
+    "icons": "node .bdd/tools/gen-icons.mjs",
+    "test:e2e": "node .bdd/steps/run.mjs",
+    "test:e2e:firefox": "node .bdd/steps/run.mjs",
+    "test:e2e:chrome": "node .bdd/steps/run-chrome.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.48.0",
+    "selenium-webdriver": "^4.28.1",
+    "web-ext": "^8.4.0"
+  }
+}
