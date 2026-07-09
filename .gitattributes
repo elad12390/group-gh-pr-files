@@ -1,0 +1,10 @@
+# Normalize line endings across platforms
+* text=auto eol=lf
+
+# Binary assets
+*.png binary
+
+# Generated / captured — collapse in diffs and exclude from language stats
+bun.lock -diff linguist-generated
+icons/icon-*.png linguist-generated
+.bdd/fixtures/** linguist-generated

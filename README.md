@@ -1,5 +1,9 @@
 # PR File Grouper for GitHub (Firefox + Chrome)
 
+[![CI](https://github.com/elad12390/group-gh-pr-files/actions/workflows/ci.yml/badge.svg)](https://github.com/elad12390/group-gh-pr-files/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
 A browser extension (works in **Firefox** and **Chrome**) that makes reviewing
 large GitHub pull requests fast. It adds a side panel to a PR's
 **Files changed / changes** view where you can:
@@ -119,3 +123,25 @@ run, and Playwright's Chromium (`bunx playwright install chromium`) for Chrome.
   file's stable diff id, so it survives GitHub's React re-renders and the new
   UI's `content-visibility` lazy rendering.
 - The script re-scans on SPA navigation (Turbo/pushState) and on DOM mutations.
+
+## Contributing
+
+Contributions are welcome! Please read the [contributing guide](CONTRIBUTING.md)
+for setup, coding conventions, and the intent-first, real-browser-tested
+workflow. Good places to start:
+
+- [Report a bug](https://github.com/elad12390/group-gh-pr-files/issues/new?template=bug_report.yml)
+- [Request a feature](https://github.com/elad12390/group-gh-pr-files/issues/new?template=feature_request.yml)
+- Open a pull request using the PR template
+
+This project follows the [Contributor Covenant](CODE_OF_CONDUCT.md) code of
+conduct.
+
+## Security
+
+Found a vulnerability? Please report it privately — see the
+[security policy](SECURITY.md). Don't open public issues for security reports.
+
+## License
+
+Released under the [MIT License](LICENSE) © 2026 Elad Ben Haim.

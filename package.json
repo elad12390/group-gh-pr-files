@@ -2,10 +2,29 @@
   "name": "pr-file-grouper",
   "version": "1.0.0",
   "private": true,
-  "description": "Firefox extension to filter, group, star and focus files in GitHub pull requests.",
+  "description": "Firefox + Chrome extension to filter, group, star and focus files in GitHub pull requests.",
+  "license": "MIT",
+  "author": "Elad Ben Haim (https://github.com/elad12390)",
+  "homepage": "https://github.com/elad12390/group-gh-pr-files#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elad12390/group-gh-pr-files.git"
+  },
+  "bugs": {
+    "url": "https://github.com/elad12390/group-gh-pr-files/issues"
+  },
+  "keywords": [
+    "browser-extension",
+    "firefox",
+    "chrome",
+    "github",
+    "pull-request",
+    "code-review",
+    "manifest-v3"
+  ],
   "scripts": {
     "lint": "web-ext lint --source-dir .",
-    "build": "web-ext build --source-dir . --overwrite-dest --ignore-files \"package.json\" \"bun.lock\" \"bun.lockb\" \"node_modules/**\" \".bdd/**\" \".idd/**\" \"tmp/**\" \"web-ext-artifacts/**\" \"README.md\" \".gitignore\"",
+    "build": "web-ext build --source-dir . --overwrite-dest --ignore-files \"package.json\" \"bun.lock\" \"bun.lockb\" \"node_modules/**\" \".bdd/**\" \".idd/**\" \"tmp/**\" \"web-ext-artifacts/**\" \"README.md\" \"CHANGELOG.md\" \"CONTRIBUTING.md\" \"CODE_OF_CONDUCT.md\" \"SECURITY.md\" \".github/**\" \".editorconfig\" \".gitattributes\" \".gitignore\"",
     "icons": "node .bdd/tools/gen-icons.mjs",
     "test:e2e": "node .bdd/steps/run.mjs",
     "test:e2e:firefox": "node .bdd/steps/run.mjs",
